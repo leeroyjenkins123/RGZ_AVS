@@ -2,6 +2,6 @@
 #include <stdlib.h>
 
 int main(){
-    printf("Hello, RGZ AVS");
+    printf("Hello, RGZ AVS 1");
     return 0;
 }
