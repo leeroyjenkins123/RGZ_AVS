@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO = 'https://github.com/leeroyjenkins123/RGZ_AVS.git'
+        GIT_REPO = 'https://github.com/your-username/your-repository.git'
         BRANCH_NAME = 'main'  // Убедитесь, что указана правильная ветка
     }
 
@@ -27,9 +27,8 @@ pipeline {
                             echo "Contents of ${file}:"
                             // Проверяем, существует ли файл, прежде чем выводить его содержимое
                             if (fileExists(file)) {
-                                sh(script: "cat ${file}", returnStdout: true).eachLine { line ->
-                                    echo line
-                                }
+                                // Используем sh для выполнения команды cat и вывода содержимого файла
+                                sh(script: "cat ${file}")
                             } else {
                                 echo "File ${file} not found in the repository."
                             }
