@@ -1,10 +1,7 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 
-int main()
-{
-
-    printf("Zdarova zebal");
-
+int main(){
+    printf("Hello, RGZ AVS");
     return 0;
 }
