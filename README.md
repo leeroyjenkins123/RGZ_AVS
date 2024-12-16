@@ -1,3 +1,3 @@
 # RGZ_AVS
-Test 5 for pipeline
+Test 6 for pipeline
 Тестовая строка
